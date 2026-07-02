@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: Students Application
+
+  datasource:
+    url:
+    driver-class-name: org.postgresql.Driver
+    hikari:
+      password:
+      username:
+  jpa:
+    hibernate:
+      ddl-auto:
+
+    show-sql: true
+
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri:
+
+

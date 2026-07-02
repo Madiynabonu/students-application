@@ -33,7 +33,7 @@ public class StudentController {
     @PreAuthorize("hasAuthority('ROLE_ADMIN')")
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
-    public StudentResponseDTO create(@RequestBody StudentRequestDTO student) {
+    public StudentResponseDTO create(@Valid @RequestBody StudentRequestDTO student) {
 
         return service.save(student);
     }
